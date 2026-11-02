@@ -20,10 +20,10 @@
 <body class="antialiased selection:bg-blue-100 selection:text-blue-900">
     <div class="max-w-6xl mx-auto px-4 py-12 md:flex md:gap-12">
         
-        <!-- 左侧导航与个人名片 (移动端置顶，PC端固定) -->
+        <!-- 左侧导航与个人名片 -->
         <div class="md:w-1/3 mb-10 md:mb-0">
             <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8 text-center sticky top-8">
-                <!-- TODO: 将 src 的链接替换为您的真实头像链接 (如 profile.jpg) -->
+                <!-- 个人头像 -->
                 <img src="photo.jpg" alt="Prof. Xiuzhu Ye" class="w-40 h-40 rounded-full mx-auto mb-6 object-cover shadow-md">
                 <h1 class="text-2xl font-bold text-slate-900 mb-2">叶修竹 (Xiuzhu Ye)</h1>
                 <p class="text-slate-600 font-medium mb-1">长聘副教授 / 博士生导师</p>
@@ -46,6 +46,23 @@
         <!-- 右侧主内容区 -->
         <div class="md:w-2/3">
             
+            <!-- 招生简章 -->
+            <div class="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-r-lg mb-8 shadow-sm">
+                <div class="flex items-start">
+                    <i class="fas fa-user-graduate text-blue-500 mt-1 mr-4 text-xl"></i>
+                    <div>
+                        <h3 class="text-blue-900 font-bold text-lg mb-2">招生简章 (Join Us)</h3>
+                        <p class="text-blue-800 text-sm leading-relaxed">
+                            实验室常年接收博士和硕士研究生。如果您对电磁逆散射、物理启发的人工智能或雷达感知等方向感兴趣，欢迎通过邮件与我联系并附上简历：
+                            <br><br>
+                            ✨ <strong>博士申请：</strong> 非常欢迎具备相关领域工业界<strong>工作经验</strong>的人士申请博士学位。
+                            <br>
+                            ✨ <strong>硕士申请：</strong> 课题组具有浓厚的数理交叉氛围，非常欢迎<strong>物理或数学专业</strong>的同学跨专业申请硕士。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
             <!-- 个人简介 -->
             <div>
                 <h2 class="section-title" style="margin-top: 0;">个人简介 (Profile)</h2>
@@ -62,30 +79,51 @@
                 </div>
             </div>
 
-            <!-- 研究方向卡片网格 -->
+            <!-- 图文卡片式：研究方向 -->
             <div>
-                <h2 class="section-title">研究方向 (Research Contributions)</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
-                        <i class="fas fa-wave-square text-blue-500 text-2xl mb-3"></i>
-                        <h3 class="font-semibold text-slate-800 mb-2">电磁逆散射方法</h3>
-                        <p class="text-slate-500 text-sm">研究基于 T 矩阵和子空间的优化方法，用于重建理想导体与介质散射体，解决混合边界及非均匀背景配置下的逆散射问题。</p>
+                <h2 class="section-title">研究方向 (Research Focus)</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    
+                    <!-- 方向 1 -->
+                    <div class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden hover:shadow-md transition">
+                        <img src="research-1.jpg" alt="电磁逆散射理论与计算成像" class="w-full h-48 object-cover border-b border-slate-100">
+                        <div class="p-5">
+                            <h3 class="font-semibold text-slate-800 text-lg mb-1">电磁逆散射理论与计算成像</h3>
+                            <h4 class="text-xs text-slate-400 mb-3 font-medium uppercase tracking-wider">Electromagnetic Inverse Scattering and Computational Imaging</h4>
+                            <p class="text-slate-500 text-sm leading-relaxed">研究复杂非均匀介质中的电磁散射机理、数学建模与高分辨率定量反演方法。重点发展非线性逆散射、子空间优化、快速成像及复杂背景下的稳健重建技术，为雷达感知和生物医学成像提供理论基础。</p>
+                        </div>
                     </div>
-                    <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
-                        <i class="fas fa-network-wired text-indigo-500 text-2xl mb-3"></i>
-                        <h3 class="font-semibold text-slate-800 mb-2">学习驱动的微波成像</h3>
-                        <p class="text-slate-500 text-sm">将电磁建模与机器学习深度融合，应用于各向异性介质成像，探索半实验训练数据生成及不确定性量化方法。</p>
+
+                    <!-- 方向 2 -->
+                    <div class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden hover:shadow-md transition">
+                        <img src="research-2.jpg" alt="物理驱动人工智能与智能感知" class="w-full h-48 object-cover border-b border-slate-100">
+                        <div class="p-5">
+                            <h3 class="font-semibold text-slate-800 text-lg mb-1">物理驱动人工智能与智能感知</h3>
+                            <h4 class="text-xs text-slate-400 mb-3 font-medium uppercase tracking-wider">Physics-Guided AI and Intelligent Sensing</h4>
+                            <p class="text-slate-500 text-sm leading-relaxed">探索电磁物理模型与深度学习、深度展开及生成式人工智能的融合，发展高效、可解释、可信赖的智能反演算法。重点研究小样本学习、跨场景泛化、不确定性量化及物理约束重建，推动复杂电磁感知智能化。</p>
+                        </div>
                     </div>
-                    <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
-                        <i class="fas fa-radar text-emerald-500 text-2xl mb-3"></i>
-                        <h3 class="font-semibold text-slate-800 mb-2">电磁感知与多模态融合</h3>
-                        <p class="text-slate-500 text-sm">开发遮挡环境及穿墙场景下的人体目标检测、定位、跟踪与姿态识别技术，结合雷达信号处理、光微波融合及模型推理。</p>
+
+                    <!-- 方向 3 -->
+                    <div class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden hover:shadow-md transition">
+                        <img src="research-3.jpg" alt="生物医学电磁成像与数字孪生" class="w-full h-48 object-cover border-b border-slate-100">
+                        <div class="p-5">
+                            <h3 class="font-semibold text-slate-800 text-lg mb-1">生物医学电磁成像与数字孪生</h3>
+                            <h4 class="text-xs text-slate-400 mb-3 font-medium uppercase tracking-wider">Biomedical Electromagnetic Imaging and Digital Twins</h4>
+                            <p class="text-slate-500 text-sm leading-relaxed">面向脑卒中诊断、脑机接口及人体健康监测，研究人体复杂组织的电磁建模、数字孪生与智能成像技术。重点探索微波脑成像、植入式无线能量与信息传输、生物电磁安全评估，以及电磁感知与诊疗一体化技术。</p>
+                        </div>
                     </div>
-                    <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
-                        <i class="fas fa-broadcast-tower text-purple-500 text-2xl mb-3"></i>
-                        <h3 class="font-semibold text-slate-800 mb-2">天线及硬件系统开发</h3>
-                        <p class="text-slate-500 text-sm">研发 MIMO 超宽带穿墙雷达系统、医用金属异物快速探测系统，以及可穿戴手环天线与人体电磁相互作用研究。</p>
+
+                    <!-- 方向 4 -->
+                    <div class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden hover:shadow-md transition">
+                        <img src="research-4.jpg" alt="非视域人体探测与智能雷达感知" class="w-full h-48 object-cover border-b border-slate-100">
+                        <div class="p-5">
+                            <h3 class="font-semibold text-slate-800 text-lg mb-1">非视域人体探测与智能雷达感知</h3>
+                            <h4 class="text-xs text-slate-400 mb-3 font-medium uppercase tracking-wider">Non-Line-of-Sight Human Sensing and Intelligent Radar</h4>
+                            <p class="text-slate-500 text-sm leading-relaxed">面向穿墙、遮挡及复杂环境中的人体探测需求，研究宽带雷达成像、目标定位与多目标分离技术。结合电磁传播建模与人工智能，实现人体姿态、行为及微动特征识别，探索智能雷达系统工程化应用。</p>
+                        </div>
                     </div>
+
                 </div>
             </div>
 
@@ -112,7 +150,7 @@
                 </div>
                 <div class="mt-4">
                     <a href="https://scholar.google.com/citations?user=ecMWi1YAAAAJ" target="_blank" class="text-blue-600 hover:text-blue-800 text-sm font-medium flex items-center gap-1">
-                        查看完整 52 篇发表论文列表 <i class="fas fa-arrow-right text-xs"></i>
+                        查看完整发表论文列表 <i class="fas fa-arrow-right text-xs"></i>
                     </a>
                 </div>
             </div>
