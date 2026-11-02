@@ -1,108 +1,166 @@
-<HTML>
-   <HEAD>
-      <TITLE>Welcome to Dr YE Xiuzhu's Homepage 欢迎来到叶修竹博士的主页</TITLE>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xiuzhu Ye (叶修竹) - Academic Homepage</title>
+    <!-- 引入 Tailwind CSS 进行极简排版 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 引入 Font Awesome 提供学术/联系图标 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- 引入 Inter 字体，提供干净的现代感 -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #1e293b; }
+        .section-title { font-size: 1.5rem; font-weight: 700; color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; margin-bottom: 1.5rem; margin-top: 2.5rem; }
+        .timeline-dot { width: 12px; height: 12px; background-color: #3b82f6; border-radius: 50%; position: absolute; left: -6px; top: 6px; }
+        .timeline-line { border-left: 2px solid #e2e8f0; position: relative; padding-left: 1.5rem; margin-left: 0.5rem; }
+    </style>
+</head>
+<body class="antialiased selection:bg-blue-100 selection:text-blue-900">
+    <div class="max-w-6xl mx-auto px-4 py-12 md:flex md:gap-12">
+        
+        <!-- 左侧导航与个人名片 (移动端置顶，PC端固定) -->
+        <div class="md:w-1/3 mb-10 md:mb-0">
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8 text-center sticky top-8">
+                <!-- TODO: 将 src 的链接替换为您的真实头像链接 (如 profile.jpg) -->
+                <img src="https://via.placeholder.com/200" alt="Prof. Xiuzhu Ye" class="w-40 h-40 rounded-full mx-auto mb-6 object-cover shadow-md">
+                <h1 class="text-2xl font-bold text-slate-900 mb-2">叶修竹 (Xiuzhu Ye)</h1>
+                <p class="text-slate-600 font-medium mb-1">长聘副教授 / 博士生导师</p>
+                <p class="text-slate-500 text-sm mb-6">北京理工大学 信息与电子学院</p>
+                
+                <div class="flex justify-center gap-4 mb-8">
+                    <a href="mailto:xiuzhuye@outlook.com" class="text-slate-400 hover:text-blue-600 transition" aria-label="Email"><i class="fas fa-envelope text-xl"></i></a>
+                    <a href="https://scholar.google.com/citations?user=ecMWi1YAAAAJ" target="_blank" class="text-slate-400 hover:text-blue-600 transition" aria-label="Google Scholar"><i class="fab fa-google text-xl"></i></a>
+                    <a href="https://github.com/xz-ye" target="_blank" class="text-slate-400 hover:text-blue-600 transition" aria-label="GitHub"><i class="fab fa-github text-xl"></i></a>
+                </div>
 
-<style type="text/css">
-.body_div {width:50em; margin-left:auto; margin-right:auto}
-</style>
-   </HEAD>
-<BODY >
-<div class="body_div">
-<!-------------------------------------------------------------------------------------------->
-<table cellpadding="20em">
-   <hr>
-<h1>Welcome to Dr YE Xiuzhu's Homepage 欢迎来到叶修竹博士的主页</h1>
-<hr>
-<tr>
-<td><img src="photo.jpg" height=200em></td>
-<td align="top">
+                <div class="text-left text-sm text-slate-600 space-y-3 pt-6 border-t border-slate-100">
+                    <p class="flex items-center gap-3"><i class="fas fa-phone w-4 text-center text-slate-400"></i> +86 18610324746</p>
+                    <p class="flex items-center gap-3"><i class="fas fa-envelope w-4 text-center text-slate-400"></i> xiuzhuye@outlook.com</p>
+                    <p class="flex items-center gap-3"><i class="fas fa-building w-4 text-center text-slate-400"></i> 北京理工大学</p>
+                </div>
+            </div>
+        </div>
 
+        <!-- 右侧主内容区 -->
+        <div class="md:w-2/3">
+            
+            <!-- 个人简介 -->
+            <div>
+                <h2 class="section-title" style="margin-top: 0;">个人简介 (Profile)</h2>
+                <div class="text-slate-600 space-y-4 leading-relaxed text-justify text-sm md:text-base">
+                    <p>
+                        叶修竹，北京理工大学信息与电子学院长聘副教授、博士生导师。于哈尔滨工业大学获得通信工程学士学位，新加坡国立大学获得博士学位。主要致力于<strong>电磁逆散射理论、微波成像与信号处理</strong>等领域的研究，并在生物医学成像及穿墙雷达感知中实现了深入应用。
+                    </p>
+                    <p>
+                        共发表 SCI/SCIE 期刊论文 52 篇（其中 33 篇为第一或通讯作者）。主持多项国家自然科学基金及北京市自然科学基金等科研项目。目前，实验室自主研发的微波传感与雷达系统正处于原型机验证阶段，并已成功签署相关技术转化协议。
+                    </p>
+                    <p>
+                        曾获<strong>2026年中国电子学会电子信息教学成果奖一等奖</strong>、<strong>2025年首都医学创新学者</strong>、<strong>2023年北京市科技新星</strong>及<strong>2021年国际应用计算电磁大会 (ACES) 青年科学家奖</strong>。目前担任 <em>IEEE Transactions on Geoscience and Remote Sensing (TGRS)</em> 及 <em>IEEE JERM</em> 副主编，以及 <em>Electromagnetic Science</em> 青年编委。
+                    </p>
+                </div>
+            </div>
 
-<h1>叶修竹</h1>
-<h3>副教授，博士生导师，特别研究员<br> 
-北京理工大学，信息与电子学院</h3> 
-<img src="email.jpg" height=20em>
-</td>
-</tr>
-</table>
-叶修竹，哈尔滨工业大学通信工程专业学士，新加坡国立大学博士，于2017年2月受Paris Sud资助为短期特邀教授，2019年加入北京理工大学信息与电子学院，为副教授、博士生导师。 叶修竹博士在计算成像算法及其应用方面有着近十年的研究经验。共发表论文80余篇，其在新加坡国立大学网站的博士论文已被下载及阅读300余次。主持项目10余项，其中包括国家自然基金项目2项，航空基金重点基金，以及国家重点实验室基金等。 为IEEE协会高级会员，任电子学会电磁兼容分会副主任，电子学会青年女科学家俱乐部理事。获2023年北京市科技新星，2021年国际应用计算电磁大会青年科学家奖。曾多次在国际会议上做特邀报告，组织并担任国际会议分会主席、技术委员会成员。为多个行业顶级期刊审稿人。
-<hr>
-<font color="red">实验室常年招收博士硕士。现拟招收2024年秋季入学博士生，希望该同学有扎实的数理基础及英文文献阅读能力。有微波电磁场相关研究经历者优先。 特别欢迎对深度学习算法感兴趣的同学。博士培养周期为四年，期间有机会送往海外进行联合培养。欢迎感兴趣的同学积极联系。</font>
-<hr>
+            <!-- 研究方向卡片网格 -->
+            <div>
+                <h2 class="section-title">研究方向 (Research Contributions)</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                        <i class="fas fa-wave-square text-blue-500 text-2xl mb-3"></i>
+                        <h3 class="font-semibold text-slate-800 mb-2">电磁逆散射方法</h3>
+                        <p class="text-slate-500 text-sm">研究基于 T 矩阵和子空间的优化方法，用于重建理想导体与介质散射体，解决混合边界及非均匀背景配置下的逆散射问题。</p>
+                    </div>
+                    <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                        <i class="fas fa-network-wired text-indigo-500 text-2xl mb-3"></i>
+                        <h3 class="font-semibold text-slate-800 mb-2">学习驱动的微波成像</h3>
+                        <p class="text-slate-500 text-sm">将电磁建模与机器学习深度融合，应用于各向异性介质成像，探索半实验训练数据生成及不确定性量化方法。</p>
+                    </div>
+                    <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                        <i class="fas fa-radar text-emerald-500 text-2xl mb-3"></i>
+                        <h3 class="font-semibold text-slate-800 mb-2">电磁感知与多模态融合</h3>
+                        <p class="text-slate-500 text-sm">开发遮挡环境及穿墙场景下的人体目标检测、定位、跟踪与姿态识别技术，结合雷达信号处理、光微波融合及模型推理。</p>
+                    </div>
+                    <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                        <i class="fas fa-broadcast-tower text-purple-500 text-2xl mb-3"></i>
+                        <h3 class="font-semibold text-slate-800 mb-2">天线及硬件系统开发</h3>
+                        <p class="text-slate-500 text-sm">研发 MIMO 超宽带穿墙雷达系统、医用金属异物快速探测系统，以及可穿戴手环天线与人体电磁相互作用研究。</p>
+                    </div>
+                </div>
+            </div>
 
+            <!-- 代表性论文 -->
+            <div>
+                <h2 class="section-title">近期代表性论文 (Selected Publications)</h2>
+                <div class="space-y-4 text-sm text-slate-700">
+                    <div class="border-l-4 border-blue-500 pl-4 py-1">
+                        <p class="mb-1"><strong>G. Zhang, N. Du, X. Ye*</strong>, "Through-Wall Radar Multi-Target Tracking With Social-Force-Augmented Labeled RFS and Adaptive Observation Fusion."</p>
+                        <p class="text-slate-500 italic">IEEE Transactions on Aerospace and Electronic Systems, 2026. DOI: 10.1109/TAES.2026.3735270</p>
+                    </div>
+                    <div class="border-l-4 border-blue-500 pl-4 py-1">
+                        <p class="mb-1"><strong>X. Zhang, X. Ye*</strong>, "A Novel Differential T-Matrix Method for Electromagnetic Inverse Scattering Problems With Inhomogeneous Background Media."</p>
+                        <p class="text-slate-500 italic">IEEE Transactions on Microwave Theory and Techniques, Vol. 74, No. 5, pp. 4209-4223, 2026.</p>
+                    </div>
+                    <div class="border-l-4 border-blue-500 pl-4 py-1">
+                        <p class="mb-1"><strong>Y. Guo, N. Du, ... X. Ye*</strong>, "A Time-Efficient and Robust Indoor Stationary Human Localization Method Using a Through-Wall MIMO Radar."</p>
+                        <p class="text-slate-500 italic">IEEE Internet of Things Journal, Vol. 12, No. 16, pp. 33215-33229, 2025.</p>
+                    </div>
+                    <div class="border-l-4 border-blue-500 pl-4 py-1">
+                        <p class="mb-1"><strong>T. Li, R. Song, X. Ye</strong>, "Uncertainty Quantification and Calibration in Full-Wave Inverse Scattering Problems With Evidential Neural Networks."</p>
+                        <p class="text-slate-500 italic">IEEE Transactions on Microwave Theory and Techniques, Vol. 73, No. 9, pp. 6304-6316, 2025.</p>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <a href="https://scholar.google.com/citations?user=ecMWi1YAAAAJ" target="_blank" class="text-blue-600 hover:text-blue-800 text-sm font-medium flex items-center gap-1">
+                        查看完整 52 篇发表论文列表 <i class="fas fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
 
-   
-<h3>工作经历</h3>
-<ul>
-   <li>2019 - 今, 副教授，博导，特别研究员，北京理工大学，信息与电子学院</li>
-   <li>2013 - 2019, 讲师，北京航空航天大学，电子信息工程学院</li>
-   <li>2012 - 2013, Research Fellow, National University of Singapore, Department of Electrical and Computer Engineering</li>
-</ul>
-   
-<h3>教育经历 </h3>
- <ul>
-   <li>2008 - 2012, Doctor of Philosophy, National University of Singapore，Department of Electrical and Computer Engineering</li>
-   <li>2004 - 2008, 学士，哈尔滨工业大学，通信工程专业</li>
-</ul>
-   
-<h3>研究方向</h3>
-<ul>
-<li> 穿透式雷达探测与感知。</li>
-<li> 机器学习，深度学习方法在成像领域的应用。 </li>
-<li> 天线设计，包括贴片天线、喇叭天线、阵列天线、相控阵天线、metasurface阵列天线等。</li>   
-<li> 微波信号收发系统设计。 </li>
-<li>近年来工作重点在基于深度学习的快速成像算法及微波成像系统的集成。</li>
-</ul>
+            <!-- 学术荣誉与兼职 -->
+            <div>
+                <h2 class="section-title">主要荣誉与学术服务 (Honors & Services)</h2>
+                <ul class="space-y-4 text-slate-600 text-sm">
+                    <li class="flex items-start"><i class="fas fa-trophy text-yellow-500 mt-1 mr-4 w-4 text-center"></i> <span><strong>First Prize</strong>, Electronic Information Teaching Achievement Competition, Chinese Institute of Electronics (2026)</span></li>
+                    <li class="flex items-start"><i class="fas fa-award text-yellow-500 mt-1 mr-4 w-4 text-center"></i> <span><strong>Capital Medical Innovation Scholar</strong> (首都医学创新学者), Beijing Municipal Science and Technology Commission (2025)</span></li>
+                    <li class="flex items-start"><i class="fas fa-star text-yellow-500 mt-1 mr-4 w-4 text-center"></i> <span><strong>Beijing Nova Talent Program</strong> (北京市科技新星), Beijing Municipal Science and Technology Commission (2023)</span></li>
+                    <li class="flex items-start"><i class="fas fa-edit text-blue-500 mt-1 mr-4 w-4 text-center"></i> <span><strong>Associate Editor</strong>, IEEE Transactions on Geoscience and Remote Sensing (2023 - Present)</span></li>
+                    <li class="flex items-start"><i class="fas fa-edit text-blue-500 mt-1 mr-4 w-4 text-center"></i> <span><strong>Young Editorial Board Member</strong>, Electromagnetic Science (2025 - Present)</span></li>
+                </ul>
+            </div>
 
+            <!-- 经历时间轴 -->
+            <div class="mb-10">
+                <h2 class="section-title">工作与教育经历 (Experience & Education)</h2>
+                <div class="timeline-line space-y-6">
+                    <div class="relative">
+                        <div class="timeline-dot"></div>
+                        <h3 class="font-semibold text-slate-800">长聘副教授 (Associate Professor with Tenure) / 博士生导师</h3>
+                        <p class="text-slate-500 text-sm mb-1">北京理工大学，信息与电子学院</p>
+                        <p class="text-slate-400 text-xs">2019.05 - 至今</p>
+                    </div>
+                    <div class="relative">
+                        <div class="timeline-dot"></div>
+                        <h3 class="font-semibold text-slate-800">讲师 (Assistant Professor)</h3>
+                        <p class="text-slate-500 text-sm mb-1">北京航空航天大学，电子信息工程学院</p>
+                        <p class="text-slate-400 text-xs">2013.12 - 2019.05</p>
+                    </div>
+                    <div class="relative">
+                        <div class="timeline-dot bg-indigo-400"></div>
+                        <h3 class="font-semibold text-slate-800">Research Fellow</h3>
+                        <p class="text-slate-500 text-sm mb-1">National University of Singapore (NUS), Microwave Research Laboratory</p>
+                        <p class="text-slate-400 text-xs">2012.02 - 2013.02</p>
+                    </div>
+                    <div class="relative">
+                        <div class="timeline-dot bg-emerald-400"></div>
+                        <h3 class="font-semibold text-slate-800">Ph.D. in Electrical and Computer Engineering</h3>
+                        <p class="text-slate-500 text-sm mb-1">National University of Singapore (NUS)</p>
+                        <p class="text-slate-400 text-xs">2008.08 - 2012.05</p>
+                    </div>
+                </div>
+            </div>
 
-<h3>发表论文</h3>
- 在微波成像领域共发表论文80余篇，包括SCI JCR Q1区期刊十余篇。
-<a href="论文列表.pdf" target="_blank">论文列表见此链接</a>
-
-
-<h3>对外交流与合作 </h3>
-<ul>
-<li>法国CNRS下属L2S实验室</li>
-<li>新加坡国立大学，微波工程实验室</li>
-<li>意大利Tronto University</li>
-</ul>
-
-<h3>学术荣誉</h3>
-<ul>
-   <li>荣获2023年北京市科技新星</li>
-   <li>荣获2021年国际应用计算电磁大会青年科学家奖</li>
-</ul>
-   
-<h3>学术兼职</h3>
-<ul>
-     <li>IEEE Transactions on Geoscience and Remote Sensing 副主编 
-     <li>IEEE Journal of Electromagnetics, RF and Microwaves in Medicine and Biology 副主编 
-   <li>IEEE Senior Member</li>
-  <li>电子学会电磁兼容分会副主任</li>
-  <li>电子学会青年女科学家俱乐部理事</li>
-  </ul>
-  </li>
-
-  <li> 学术会议兼职
-  <ul>
-<li> 12.2020	特别分会主席（Special session Organizer & Chair）, 2020 IEEE MTT-S International Conference on Numerical Electromagnetic and Multiphysics Modeling and Optimization (NEMO).</li>
-<li> 12.2019	技术委员会成员，Technical Program Committee (TPC), 2019 IEEE Asia Pacific Microwave Conference, Singapore.</li>
-<li> 08.2019	分会主席，2019 International Conference on Microwave and Millimeter Wave Technology，Guangzhou, China</li>
-<li> 05.2019	分会主席，The Applied Computational Electromagnetics Society Conference 2019，Nanjing, China</li>
-<li> 03.2019	分会主席，2019 IEEE International Conference on Computational Electromagnetics，Shanghai, China </li>
-<li> 08.2018	特别分会主席（Special session Organizer & Chair）, 5_FocusSession.SC5: Inverse Scattering, Imaging, and Remote Sensing, 40th Progress in Electromagnetics Research Symposium (PIERS), Toyama, Japan </li>
-<li> 07.2018	特别分会主席（Special session committee chair）, the New Electromagnetic Imaging Technique and System, 2018 Cross Strait Quad-Regional Radio Science and Wireless Technology Conference, Xuzhou, China</li>
-<li> 08.2017	分会主席（Session Organizer & Chair）, TH2-A: New strategies and algorithms for electromagnetic imaging, 2017 International Applied Computational Electromagnetics Society Symposium, Suzhou, China </li>
-<li> 08.2016	特邀报告（Invited talk）, focus section SC5: Inverse Scattering and Imaging II, 37th Progress in Electromagnetics Research Symposium (PIERS), Shanghai, China </li>
-<li> 07.2016	技术委员会成员，Technical Program Committee (TPC), IEEE MTT-S International Microwave Workshop Series on Advanced Materials and Processes for RF and THz Applications, Chengdu, China </li>
-<li> 07.2015	特别分会主席，Co-organizer and Chair of focus section SC5: Imaging, Inverse Scattering and Remote Sensing I&II, 36th Progress in Electromagnetics Research Symposium (PIERS), Prague, Czech</li>
-<li> 07.2015	技术委员会成员，Technical Program Committee (TPC), International Microwave Workshop Series on Advanced Materials and Processes for RF and THz Applications, Suzhou, China</li>
-  </ul>
-  </li>
-
-</ul>
-
-
-</div>
-</BODY>
-</HTML>
+        </div>
+    </div>
+</body>
+</html>
